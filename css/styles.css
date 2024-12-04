@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+h1, h2, h3 {
+    color: #8500b9;
+}
+
+.top-banner {
+    background-color: #9500ff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(to left, rgb(28, 9, 60), rgb(148, 139, 163));
+    color: #fff;
+    padding: 12px 0;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 1000;
+}
+.header .logo-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .header .logo-img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .logo-img {
+        max-width: 120px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 5px 10px;
+    }
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8500b9;
+}
+
+#slider .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin: 0 auto;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.produto {
+    flex: 1 1 calc(33.33% - 30px);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+body h1 {
+    font-family: VarsityTeam-Bold;
+    font-size: x-large;
+}
+
+.produto h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: Conthrax-SemiBold;
+    font-size: x-large;
+    color: #000000;
+}
+
+.produto p {
+    color: #aaa;
+    margin: 5px 0;
+}
+
+.produto h1 {
+    color: #000000;
+    font-size: 22px;
+    font-family: VarsityTeam-Bold;
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+.carousel-item .produto:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #8500b9;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #8500b9;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+footer .social-icons i {
+    font-size: 20px;
+    color: white;
+}
+
+footer .social-icons a:hover i {
+    color: #8500b9;
+}
+
+.centralizar-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.centralizar-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-item {
+    min-width: 20%;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: -50px;
+}
+
+.next-btn {
+    right: -50px;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+@font-face {
+    font-family: VarsityTeam-Bold;
+    src: url(../css/varsity_team/VarsityTeam-Bold.otf);
+}
+
+@font-face {
+    font-family: Conthrax-SemiBold;
+    src: url(Conthrax-SemiBold.otf);
+}
+
+body h1 {
+    font-family: VarsityTeam-Bold;
+    font-size: x-large;
+}
+
+body h2 {
+    font-family: Conthrax-SemiBold;
+    font-size: larger;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 40%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 10;
+}
+
+.carousel-container, .carousel {
+    width: 100%;
+}
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carrossel .produto {
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+
+.seta.esquerda {
+    left: 10px;
+}
+
+.seta.direita {
+    right: 10px;
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.destaques, .Nintendo, .Playstation, .Xbox, .pc {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.destaques h3, .Nintendo h3, .Playstation h3, .Xbox h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1c093c;
+}
+
+.produto {
+    display: inline-block;
+    width: 216px;
+    height: 416px;
+    text-align: center;
+    margin: 15px;
+    background-color: rgb(249, 249, 249);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    vertical-align: top;
+}
+
+.produto img {
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.produto p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel-item {
+    flex: 0 0 20%; 
+    margin: 10px;
+}

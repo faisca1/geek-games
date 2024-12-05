@@ -91,7 +91,6 @@ nav ul li a:hover {
     height: auto;
     object-fit: cover;
     max-height: 400px;
-    margin-top: -20%;
 }
 
 .carousel-item {
